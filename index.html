@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green EV Impact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">EV Impact</div>
+            <nav class="main-nav">
+                <a href="#calculator" class="nav-link">Calculator</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#poll" class="nav-link">Poll</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Emissions Calculator -->
+        <section id="calculator" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <h1>See Your Green Savings!</h1>
+            <div class="calculator-container">
+                <div class="input-group">
+                    <label for="distance">Approximate Distance (km)</label>
+                    <input type="number" id="distance" min="0" placeholder="Enter distance">
+                </div>
+                <button id="calculateBtn" class="primary-btn">Calculate Savings</button>
+                <div id="result" class="result-container">
+                    <div id="visualFeedback" class="visual-feedback">
+                        <div class="particles"></div>
+                    </div>
+                    <p id="savingsText" class="savings-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Story Section -->
+        <section id="impact" class="impact-section">
+            <h2>Your Ride, Bigger Impact</h2>
+            <div class="impact-blocks">
+                <div class="impact-block">
+                    <div class="icon">🌱</div>
+                    <h3>Clean Air Champion</h3>
+                    <p>Every EV ride contributes to cleaner air in our community. Your choice makes a difference!</p>
+                </div>
+                <div class="impact-block">
+                    <div class="icon">🌍</div>
+                    <h3>Future Forward</h3>
+                    <p>By choosing EV, you're part of the solution for a sustainable tomorrow.</p>
+                </div>
+                <div class="impact-block">
+                    <div class="icon">⚡</div>
+                    <h3>Energy Smart</h3>
+                    <p>Electric vehicles are 3x more energy-efficient than conventional cars.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Poll Section -->
+        <section id="poll" class="poll-section">
+            <h2>Quick Poll</h2>
+            <div class="poll-container">
+                <p>Do you support EVs for cleaner air?</p>
+                <div class="poll-buttons">
+                    <button id="pollYes" class="poll-btn">Yes</button>
+                    <button id="pollNo" class="poll-btn">No</button>
+                </div>
+                <p id="pollResult" class="poll-result"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo-small">EV Impact</div>
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
